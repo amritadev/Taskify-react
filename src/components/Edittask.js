@@ -26,8 +26,7 @@ function Edittask() {
     const getTaskDatabyId = async () => {
         try {
             let response = await getTaskId(id);
-            console.log("API Response:", response.data); // Debugging step
-            setTaskdata(response.data); // Ensure the correct structure
+            setTaskdata(response.data); 
         } catch (error) {
             console.error("Error fetching task data:", error);
         }
